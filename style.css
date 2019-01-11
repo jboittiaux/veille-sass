@@ -1,0 +1,118 @@
+/*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select, textarea {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img, embed, iframe, object, audio, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+  text-align: left;
+}
+
+.btn.radius, .radius.btn-success, .radius.btn-danger {
+  border-radius: 0.25rem;
+}
+
+.btn.rounded, .rounded.btn-success, .rounded.btn-danger {
+  border-radius: 6.25rem;
+}
+
+body {
+  background: white;
+  padding: 1.2rem;
+  color: #333333;
+  font-size: 0.8rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+  margin: 0.2rem 0 1rem 0;
+}
+
+.table {
+  width: 100%;
+  margin: 0.2rem 0 1rem 0;
+}
+.table td, .table th {
+  padding: 0.2rem 0.5rem;
+  border: 1px solid #1a1a1a;
+  color: white;
+  background: #787878;
+}
+.table thead th {
+  background: #333333;
+  color: #cccccc;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
+.btn, .btn-success, .btn-danger {
+  background: #3b92ba;
+  border: 1px solid #22556d;
+  cursor: pointer;
+  color: white;
+  text-transform: capitalize;
+  letter-spacing: 0.02rem;
+  padding: 0.1rem 0.5rem;
+}
+.btn:hover, .btn-success:hover, .btn-danger:hover {
+  background: #5ca8cc;
+}
+.btn.mini, .mini.btn-success, .mini.btn-danger {
+  font-size: 0.6rem;
+  padding: 0.1rem 0.3rem;
+}
+
+.btn-danger {
+  background: #db0000;
+  border-color: #750000;
+}
+.btn-danger:hover {
+  background: #ff0f0f;
+}
+
+.btn-success {
+  background: #36b040;
+  border-color: #1e6224;
+}
+.btn-success:hover {
+  background: #4fc95a;
+}
+
+/*# sourceMappingURL=style.css.map */

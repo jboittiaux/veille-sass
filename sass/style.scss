@@ -1,0 +1,86 @@
+@import "libs/reset.scss";
+
+$background-default: hsl(199, 52%, 48%);
+$background-success: hsl(125, 53%, 45%);
+$background-danger: hsl(0, 100%, 43%);
+
+%radius {
+    border-radius: .25rem;
+}
+%rounded {
+    border-radius: 6.25rem;
+}
+
+body {
+    background: hsl(0, 0%, 100%);
+    padding: 1.2rem;
+    color: hsl(0, 0%, 20%);
+    font-size: .8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    margin: .2rem 0 1rem 0;
+}
+
+.table {
+    width: 100%;
+    margin: .2rem 0 1rem 0;
+
+    td, th {
+        padding: .2rem .5rem;
+        border: 1px solid hsl(0, 0%, 10%);
+        color: hsl(0, 0%, 100%);
+        background: hsl(0, 0%, 47%);
+    }
+
+    thead th {
+        background: hsl(0, 0%, 20%);
+        color: hsl(0, 0%, 80%);
+        font-weight: bold;
+        font-size: 1.1em;
+        text-transform: uppercase;
+    }
+}
+
+.btn {
+    background: $background-default;
+    border: 1px solid darken($background-default, 20%);
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    text-transform: capitalize;
+    letter-spacing: .02rem;
+    padding: .1rem .5rem;
+
+    &:hover {
+        background: lighten($background-default, 10%);
+    }
+    &.radius {
+        @extend %radius;
+    }
+    &.rounded {
+        @extend %rounded;
+    }
+    &.mini {
+        font-size: .6rem;
+        padding: .1rem .3rem;
+    }
+}
+.btn-danger {
+    @extend .btn;
+
+    background: $background-danger;
+    border-color: darken($background-danger, 20%);
+    &:hover {
+        background: lighten($background-danger, 10%);
+    }
+}
+.btn-success {
+    @extend .btn;
+
+    background: $background-success;
+    border-color: darken($background-success, 20%);
+    &:hover {
+        background: lighten($background-success, 10%);
+    }
+}
